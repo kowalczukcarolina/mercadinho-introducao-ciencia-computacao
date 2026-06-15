@@ -13,7 +13,7 @@ void inserirProduto(int *ponteiroNumeroProdutos, Produtos **produto){
 
         *produto = realloc((*produto), tamanhoVetorProdutos);//realocando o novo tamanho
         scanf(" %s", (*produto)[(*ponteiroNumeroProdutos-1)].nome);
-        scanf(" %d", &(*produto)[(*ponteiroNumeroProdutos-1)].quantidade);
-        scanf(" %lf", &(*produto)[(*ponteiroNumeroProdutos-1)].preco);
+        scanf(" %d", &((*produto)[(*ponteiroNumeroProdutos-1)].quantidade));
+        scanf(" %lf", &((*produto)[(*ponteiroNumeroProdutos-1)].preco));
 
 }
