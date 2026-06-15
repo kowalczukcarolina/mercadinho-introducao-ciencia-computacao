@@ -7,8 +7,11 @@ int main(void){
     int *ponteiroNumeroProdutos = NULL;
     Produtos *produto = NULL;
     char comando[3] = {0};
+    double saldo = 100;
+    double *ponteiroSaldo = NULL;
 
     ponteiroNumeroProdutos = &numeroProdutos;
+    ponteiroSaldo = &saldo;
 
     while(1){ //depois mexer no while para ter como sair da execução
     scanf("%s", comando);
