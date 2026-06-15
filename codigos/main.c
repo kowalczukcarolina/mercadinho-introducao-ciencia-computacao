@@ -10,7 +10,7 @@ int main(void){
 
     ponteiroNumeroProdutos = &numeroProdutos;
 
-    while(1){
+    while(1){ //depois mexer no while para ter como sair da execução
     scanf("%s", comando);
 
     if(comando[0] == 'I' && comando[1] == 'P'){
