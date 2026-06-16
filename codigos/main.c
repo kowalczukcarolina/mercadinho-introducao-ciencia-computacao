@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "inserirProduto.c"
+#include "consultarEstoque.c"
 
 int main(void){
     int numeroProdutos = 0;
@@ -32,6 +33,7 @@ int main(void){
         
     }else if(comando[0] == 'C' && comando[1] == 'E'){
         //CONSULATAR ESTOQUE
+        consultarEstoque(&produto, ponteiroNumeroProdutos);
         
     }else if(comando[0] == 'C' && comando[1] == 'S'){
         //CONSULTAR SALDO
