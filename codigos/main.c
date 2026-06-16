@@ -32,8 +32,8 @@ int main(void){
         //MODIFICAR PREÇO
         
     }else if(comando[0] == 'C' && comando[1] == 'E'){
-        //CONSULATAR ESTOQUE
         consultarEstoque(&produto, ponteiroNumeroProdutos);
+
         
     }else if(comando[0] == 'C' && comando[1] == 'S'){
         //CONSULTAR SALDO
