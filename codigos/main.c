@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "inserirProduto.c"
 #include "consultarEstoque.c"
+#include "modificarPreco.c"
 
 int main(void){
     int numeroProdutos = 0;
@@ -29,7 +30,7 @@ int main(void){
         //AUMENTAR ESTOQUE
 
     }else if(comando[0] == 'M' && comando[1] == 'P'){
-        //MODIFICAR PREÇO
+        modificarPreco(&produto);
         
     }else if(comando[0] == 'C' && comando[1] == 'E'){
         //CONSULATAR ESTOQUE
