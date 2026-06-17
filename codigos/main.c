@@ -4,6 +4,7 @@
 #include "consultarEstoque.c"
 #include "modificarPreco.c"
 #include "realizarVenda.c"
+#include "consultarSaldo.c"
 
 int main(void){
     int numeroProdutos = 0;
@@ -42,6 +43,7 @@ int main(void){
         
     }else if(comando[0] == 'C' && comando[1] == 'S'){
         //CONSULTAR SALDO
+        consultarSaldo(ponteiroSaldo);
 
     }else if(comando[0] == 'F' && comando[1] == 'E'){
         //FINALIZAR O DIA
