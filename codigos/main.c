@@ -3,6 +3,7 @@
 #include "inserirProduto.c"
 #include "consultarEstoque.c"
 #include "modificarPreco.c"
+#include "realizarVenda.c"
 
 int main(void){
     int numeroProdutos = 0;
@@ -31,7 +32,10 @@ int main(void){
 
     }else if(comando[0] == 'M' && comando[1] == 'P'){
         modificarPreco(&produto);
-        
+    }else if(comando[0] == 'V' && comando[1] == 'E'){ 
+        realizarVenda(&produto, ponteiroSaldo);
+        //REALIZAR VENDA 
+
     }else if(comando[0] == 'C' && comando[1] == 'E'){
         consultarEstoque(&produto, ponteiroNumeroProdutos);
 
