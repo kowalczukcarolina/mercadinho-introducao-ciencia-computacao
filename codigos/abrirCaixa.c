@@ -12,8 +12,9 @@ void abrirCaixa(int *ponteiroNumeroProdutos, Produtos **produto, double *ponteir
     fscanf(arquivo, "%d", ponteiroNumeroProdutos);
 
     for(int i = 0; i<ponteiroNumeroProdutos; i++){
-        fscanf();
+        fscanf(arquivo, "%s %d %lf", (*produto)[i].nome, (*produto)[i].quantidade, (*produto)[i].preco);
     }
-
+    
+    fclose(arquivo);
 
 }
