@@ -3,7 +3,7 @@
 #include "produtos.h"
 
 void finalizarDia(Produtos *produto, int numeroProdutos, double saldoCaixa) {
-    FILE *arquivo = fopen("dados_mercado.txt", "w"); //abrindo o arquivo pra escrita (w=write)
+    FILE *arquivo = fopen("estoque.txt", "w"); //abrindo o arquivo pra escrita (w=write)
     
     if (arquivo == NULL) {
         printf("Erro ao abrir o arquivo para salvar os dados.\n");
