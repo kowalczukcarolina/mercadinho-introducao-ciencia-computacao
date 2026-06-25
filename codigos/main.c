@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "produtos.h"
+#include "aumentarEstoque.c"
+#include "consultarEstoque.c"
+#include "finalizarDia.c"
+#include "inserirProduto.c"
+#include "modificarPreco.c"
+#include "realizarVenda.c"
+#include "consultarSaldo.c"
+
 
 int main(void){
     int numeroProdutos = 0;
