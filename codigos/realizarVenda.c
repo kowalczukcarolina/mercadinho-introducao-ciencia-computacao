@@ -14,12 +14,16 @@ void realizarVenda(Produtos **produto, double *ponteiroSaldo){
         if(codigo == -1){
             break;
         }
-        (*produto)[codigo].quantidade = (*produto)[codigo].quantidade - 1;
-        *ponteiroSaldo = *ponteiroSaldo + (*produto)[codigo].preco;
-
-        printf("%s ", (*produto)[codigo].nome);
-        printf("%.2lf \n", (*produto)[codigo].preco);
-        compraAtual = compraAtual + (*produto)[codigo].preco;
+        if((*produto)[codigo].quantidade==0){
+            continue;
+        }
+        else{
+            (*produto)[codigo].quantidade = (*produto)[codigo].quantidade - 1;
+            *ponteiroSaldo = *ponteiroSaldo + (*produto)[codigo].preco;
+            printf("%s ", (*produto)[codigo].nome);
+            printf("%.2lf \n", (*produto)[codigo].preco);
+            compraAtual = compraAtual + (*produto)[codigo].preco;
+        } 
     }
 
     printf("Total: %.2lf\n", compraAtual);
