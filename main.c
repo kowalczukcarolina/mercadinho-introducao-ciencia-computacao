@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "produtos.h"
-#include "aumentarEstoque.c"
-#include "consultarEstoque.c"
-#include "finalizarDia.c"
-#include "inserirProduto.c"
-#include "modificarPreco.c"
-#include "realizarVenda.c"
-#include "consultarSaldo.c"
-#include "leituraArquivo.c"
+#include "aumentarEstoque.h"
+#include "consultarEstoque.h"
+#include "finalizarDia.h"
+#include "inserirProduto.h"
+#include "modificarPreco.h"
+#include "realizarVenda.h"
+#include "consultarSaldo.h"
+#include "leituraArquivo.h"
 
 
 int main(void){

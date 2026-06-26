@@ -10,7 +10,7 @@ O saldo pode ficar negativo
 */
 
 
-void aumentarEstoque(Produtos *produto, double *saldoCaixa) {
+void aumentarEstoque(Produtos *produto, double *saldoCaixa){
     int codigoProcurado = 0;
     int quantidadeAdicionar = 0;
     

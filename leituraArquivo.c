@@ -1,3 +1,6 @@
+
+#ifndef LEITURA_ARQUIVO_H
+#define LEITURA_ARQUIVO_H
 #include <stdio.h>
 #include <stdlib.h>
 #include "produtos.h"
@@ -30,3 +33,5 @@ void leituraArquivo(Produtos **produto, int *ponteiroNumeroProdutos, double *pon
   }
   fclose(arquivo);
 }
+
+#endif
