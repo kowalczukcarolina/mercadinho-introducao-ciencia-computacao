@@ -8,6 +8,7 @@
 #include "modificarPreco.c"
 #include "realizarVenda.c"
 #include "consultarSaldo.c"
+#include "leituraArquivo.c"
 
 
 int main(void){
@@ -18,6 +19,7 @@ int main(void){
     char comando[3] = {0};
 
     ponteiroNumeroProdutos = &numeroProdutos;
+    leituraArquivo(&produto, ponteiroNumeroProdutos, &saldoCaixa);
 
     while(1){ //depois mexer no while para ter como sair da execução
         scanf("%s", comando); //lendo string comando - dado por 2 letras
